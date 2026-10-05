@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
 @Data
@@ -13,6 +14,10 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class OrderPaymentVO implements Serializable {
+
+    private BigDecimal amount; //实际支付金额
+    private String qrCodeUrl; //扫码支付二维码地址
+    private String paymentStatus; //支付状态
 
     private String nonceStr; //随机字符串
     private String paySign; //签名

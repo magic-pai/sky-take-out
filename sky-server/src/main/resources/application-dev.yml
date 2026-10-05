@@ -1,3 +1,9 @@
+spring:
+  redis:
+    host: localhost
+    port: 6379
+    database: 0
+
 sky:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -6,3 +12,8 @@ sky:
     database: sky_take_out
     username: root
     password: root
+  wechat:
+    appid: ${SKY_WECHAT_APPID:}
+    secret: ${SKY_WECHAT_SECRET:}
+    dev-login-enabled: true
+    dev-openid: oyR1P3aFyqV8LNXviIs28xjfjm9I

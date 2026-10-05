@@ -12,6 +12,8 @@ public class WeChatProperties {
 
     private String appid; //小程序的appid
     private String secret; //小程序的秘钥
+    private Boolean devLoginEnabled; //开发环境是否启用本地登录兼容
+    private String devOpenid; //开发环境登录时使用的测试openid
     private String mchid; //商户号
     private String mchSerialNo; //商户API证书的证书序列号
     private String privateKeyFilePath; //商户私钥文件

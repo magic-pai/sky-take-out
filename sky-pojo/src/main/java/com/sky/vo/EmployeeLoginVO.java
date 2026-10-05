@@ -16,16 +16,16 @@ import java.io.Serializable;
 @ApiModel(description = "员工登录返回的数据格式")
 public class EmployeeLoginVO implements Serializable {
 
-    @ApiModelProperty("主键值")
+    @ApiModelProperty(value = "主键值", example = "1")
     private Long id;
 
-    @ApiModelProperty("用户名")
+    @ApiModelProperty(value = "用户名", example = "admin")
     private String userName;
 
-    @ApiModelProperty("姓名")
+    @ApiModelProperty(value = "姓名", example = "管理员")
     private String name;
 
-    @ApiModelProperty("jwt令牌")
+    @ApiModelProperty(value = "JWT 令牌，用于后续管理端请求身份校验")
     private String token;
 
 }
